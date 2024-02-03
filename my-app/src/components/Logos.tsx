@@ -12,7 +12,7 @@ const Logos = () => {
         <Image src={cocacola} alt='cocacola' className=''/>
         <Image src={google} alt='google' className=''/>
         <Image src={dribbble} alt='dribbble' className=''/>
-        <Image src={amazon} alt='amazon' className=']'/>
+        <Image src={amazon} alt='amazon' className=''/>
     </div>
   )
 }
