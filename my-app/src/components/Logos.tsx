@@ -7,12 +7,14 @@ import amazon from '../../public/amazon.png'
 
 const Logos = () => {
   return (
-    <div className='flex lg:justify-around'>
-        <Image src={behance} alt='behance' className=''/>
-        <Image src={cocacola} alt='cocacola' className=''/>
-        <Image src={google} alt='google' className=''/>
-        <Image src={dribbble} alt='dribbble' className=''/>
-        <Image src={amazon} alt='amazon' className=''/>
+    <div className='mb-[100px]'>
+    <div className='grid xl:grid-cols-5 xl:mx-[350px] xl:m-auto md:grid-cols-2 md:space-y-[20px]  max-sm:grid-cols-3 max-sm:w-[350px] max-sm:m-auto'>
+      <Image src={behance} alt="logo"  className='m-auto max-sm:pr-[20px]'/>
+      <Image src={cocacola} alt="logo" className='m-auto max-sm:pr-[20px]'/>
+      <Image src={google} alt="logo" className='m-auto max-sm:pl-[10px]'/>
+      <Image src={dribbble} alt="logo" className='m-auto max-sm:ml-[40px]'/>
+      <Image src={amazon} alt="logo" className='m-auto max-sm:ml-[60px]'/>
+    </div>
     </div>
   )
 }

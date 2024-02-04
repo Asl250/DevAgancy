@@ -4,7 +4,7 @@ import photo from '../../public/illustration (1).png'
 
 const Banner = () => {
   return (
-    <div className='my-[150px] flex flex-col items-center'>
+    <div className='flex flex-col items-center'>
       <h1 className='font-bold text-7xl text-center mb-10'>
             We Build 
             <span className='bg-[#F4D3A1]'> Digital </span> 

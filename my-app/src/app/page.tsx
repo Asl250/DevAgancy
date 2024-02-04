@@ -1,6 +1,10 @@
 import Navbar from '@/components/Navbar'
 import Banner from '@/components/Banner';
 import Logos from '@/components/Logos';
+import Projects from '@/components/Projects';
+import Provide from '@/components/Provide';
+import Experiences from '@/components/Experiences';
+import Feedback from '@/components/Feedback';
 
 export default function Home() {
   return (
@@ -9,8 +13,14 @@ export default function Home() {
       <Navbar/>
       <Banner/>
     </div>
-    <Logos/>
-
+    <div className='bg-white'>
+      <Logos/>
+      <Projects/>
+      <Provide/>
+      <Experiences/>
+      <Feedback/>
+    </div>
+    
     </>
 
   );
