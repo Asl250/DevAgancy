@@ -23,7 +23,7 @@ export function Feedback() {
             </p>
         </div>
 
-    <Carousel className="max-w-[70%] mx-[15%] mt-10">
+    <Carousel className="max-w-[80%] mx-[10%] mt-10">
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>

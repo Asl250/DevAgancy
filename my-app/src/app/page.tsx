@@ -5,6 +5,8 @@ import Projects from '@/components/Projects';
 import Provide from '@/components/Provide';
 import Experiences from '@/components/Experiences';
 import { Feedback } from '@/components/Feedback';
+import Subscribe from '@/components/Subscribe';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -19,7 +21,9 @@ export default function Home() {
       <Provide/>
       <Experiences/>
       <Feedback/>
+      <Subscribe/>
     </div>
+    <Footer/>
     
     </>
 
