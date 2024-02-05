@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import check from '../../public/Ellipse 1 (2).png'
+import check from '../../public/tick.png'
 import feature from '../../public/Feature img.png'
 import feature1 from '../../public/Feature img (1).png'
 
@@ -18,14 +18,14 @@ const Experiences = () => {
             nunc sit amet risus nulla ornare egestas.
             </p>
             <div className='flex mt-2'>
-                <Image src={check} alt="check"/>
+                <Image src={check} alt="check" className='h-7 mt-2 mr-1'/>
 
                 <p className="mt-2">
                     Blandit ut nunc vel bibendum semper elit
                 </p>
             </div>
             <div className='flex mt-3'>
-                <Image src={check} alt="check"/>
+                <Image src={check} alt="check" className='h-7 mt-2 mr-1'/>
 
                 <p className="mt-2">
                     Blandit ut nunc vel bibendum semper elit
@@ -51,14 +51,14 @@ const Experiences = () => {
             nunc sit amet risus nulla ornare egestas.
             </p>
             <div className='flex mt-2'>
-                <Image src={check} alt="check"/>
+                <Image src={check} alt="check" className='h-7 mt-2 mr-1'/>
 
                 <p className="mt-2">
                     Blandit ut nunc vel bibendum semper elit
                 </p>
             </div>
             <div className='flex mt-3'>
-                <Image src={check} alt="check"/>
+                <Image src={check} alt="check" className='h-7 mt-2 mr-1'/>
 
                 <p className="mt-2">
                     Blandit ut nunc vel bibendum semper elit

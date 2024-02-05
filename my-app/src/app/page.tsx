@@ -4,7 +4,7 @@ import Logos from '@/components/Logos';
 import Projects from '@/components/Projects';
 import Provide from '@/components/Provide';
 import Experiences from '@/components/Experiences';
-import Feedback from '@/components/Feedback';
+import { Feedback } from '@/components/Feedback';
 
 export default function Home() {
   return (

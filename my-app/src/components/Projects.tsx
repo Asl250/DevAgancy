@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Projects = () => {
   return (
     <div>
-        <div className="lg:justify-between  flex mx-[5%]">
+        <div className="lg:justify-between flex mx-[5%]">
         <div className="block">
             <p className="text-4xl font-bold underline decoration-[#fc9063]">Our Projects</p><br/>
             <p className="text-[#a49e9b] text-xl">
@@ -18,7 +18,6 @@ const Projects = () => {
         <div>
             <div className='max-[640px]:ml-[50px]'>
             <button className='max-sm:hidden lg:block px-[40px] py-[20px] bg-[#F4D3A1] rounded-md text-[#FF733B] text-2xl'>See More</button>
-
             </div>
         </div>
         </div>
