@@ -1,4 +1,4 @@
-import logo from '../../public/logo (1).png'
+import logo from '../../public/logo1.png'
 import facebook from '../../public/facebook.png'
 import twitter from '../../public/twitter.png'
 import basketball from '../../public/basketball.png'
@@ -13,7 +13,7 @@ const Footer = () => {
         <Image src={logo} alt='logo' className='m-auto'/>
         <ul className='grid text-white text-2xl max-sm:text-lg xl:grid-cols-5 xl:mx-[500px] mt-8 max-sm:grid-cols-3 max-sm:mr-6 max-sm:ml-[50px] md:grid-cols-5 md:mx-6  gap-0'>
           <li>Home</li>
-          <li>About us</li>
+          <li>About</li>
           <li>Portfolio</li>
           <li className='max-sm:text-center'>Contact</li>
           <li className='max-sm:text-center'>Privacy</li>

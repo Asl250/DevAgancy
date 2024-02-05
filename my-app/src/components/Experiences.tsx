@@ -6,7 +6,7 @@ import feature1 from '../../public/Feature img (1).png'
 const Experiences = () => {
   return (
     <>
-    <div className="my-[5%] xl:mx-[20%] grid grid-cols-2 max-sm:grid-cols-1">
+    <div className="mx-[5%] my-[5%] xl:mx-[20%] grid grid-cols-2 max-sm:grid-cols-1">
         <div className="max-sm:mx-4 mx-auto my-auto">
             <h1 className="text-4xl font-bold">
                 Providing The World's Best 
