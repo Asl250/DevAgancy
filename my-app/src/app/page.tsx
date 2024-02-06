@@ -6,9 +6,15 @@ import Provide from '@/components/Provide';
 import Experiences from '@/components/Experiences';
 import { Feedback } from '@/components/Feedback';
 import Subscribe from '@/components/Subscribe';
-import Footer from '@/components/Footer';
+import { auth } from '@clerk/nextjs';
+import { redirect } from 'next/navigation';
+// import Footer from '@/components/Footer';
 
 export default function Home() {
+  const {userId} = auth()
+  if(userId) {
+    redirect('/dashboard');
+  }
   return (
     <>
     <div className='bg-[#F4ECE0]'>
@@ -23,7 +29,7 @@ export default function Home() {
       <Feedback/>
       <Subscribe/>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     
     </>
 

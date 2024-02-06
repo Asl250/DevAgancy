@@ -1,10 +1,13 @@
-'use client'
+'use client';
 import Image from 'next/image'
 import logo from '../../public/logo (1).png' 
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import Link from 'next/link';
+import { UserButton, useUser } from '@clerk/nextjs';
 const Navbar = () => {
+    const {user, isLoaded} = useUser();
+
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
@@ -18,7 +21,14 @@ const Navbar = () => {
         <li className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Services</li>
         <li className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Projects</li>
         <li className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>About</li>
-        <Link href="/dashboard" className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Login</Link>
+        {
+          isLoaded && user &&
+          <>
+            <Link href="/dashboard" className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Login</Link>
+            <UserButton afterSignOutUrl='/'/>
+          </>
+      
+        }
         <button className='px-[20px] py-[10px] bg-[#FF733B] rounded-md text-white text-xl'>Contact</button>
 
       </ul>
@@ -31,7 +41,13 @@ const Navbar = () => {
           <li className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Our services</li>
           <li className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Projects</li>
           <li className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>About</li>
-          <Link href="/dashboard" className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Login</Link>
+          {
+            isLoaded && user &&
+            <>
+              <Link href="/dashboard" className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black block'>Login</Link>
+              <UserButton afterSignOutUrl='/'/>
+            </>
+          }
           <button className='px-[35px] py-[10px] bg-[#FF733B] rounded-md ml-4 text-white text-xl font-bold'>Contact</button>
 
       </ul>
