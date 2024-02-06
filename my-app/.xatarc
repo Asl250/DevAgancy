@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Aslbek-Rashidov-s-workspace-9e1g4g.us-east-1.xata.sh/db/DevAgancy",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
