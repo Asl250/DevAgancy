@@ -5,17 +5,10 @@ import { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import Link from 'next/link';
 import { UserButton, useUser } from '@clerk/nextjs';
+import './icon.css'
 
 const Navbar = () => {
-  useEffect(() => {
-    // Check if there is more than one element with the specified selector
-    const elements = document.querySelectorAll('.element');
-    if (elements.length > 1) {
-      // If there is more than one element, remove the first one
-      elements[0].parentNode.removeChild(elements[0]);
-    }
-  }, []);
-    
+  // const [user, setUser]
 
     const [nav, setNav] = useState(false);
 
@@ -40,7 +33,7 @@ const Navbar = () => {
       <div onClick={handleNav} className='block md:hidden'>
           {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30} />}
       </div>
-      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full  bg-white  ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full  bg-white  ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%] pl-10'}>
         <Image src={logo} alt='logo' className='mt-5 ml-3 cursor-pointer'/>
         <li className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Home</li>
         <li className='p-4 text-[#6B625E] cursor-pointer text-xl font-bold hover:text-black'>Services</li>

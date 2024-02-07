@@ -8,7 +8,7 @@ import { Feedback } from '@/components/Feedback';
 import Subscribe from '@/components/Subscribe';
 import { auth } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
-// import Footer from '@/components/Footer';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const {userId} = auth()
@@ -30,8 +30,8 @@ export default function Home() {
       <Experiences/>
       <Feedback/>
       <Subscribe/>
+      <Footer/>
     </div>
-    {/* <Footer/> */}
     
     </>
 

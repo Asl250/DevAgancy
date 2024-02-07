@@ -19,9 +19,9 @@ const Projects = () => {
                 <button className='max-sm:hidden lg:block px-[40px] py-[20px] bg-[#F4D3A1] rounded-md text-[#FF733B] text-2xl'>See More</button>
             </div>
         </div>
-        <div className="my-[10px] max-sm:mx-[30%] grid lg:grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-2 justify-center items-center max-[1330px]:mx-[20%]">
-                <Image src={photo1} alt="image1" className='lg:mx-[15%] max-sm:mb-5'/>
-                <Image src={photo2} alt="image2" className='lg:mx-[15%]'/>
+        <div className="my-[10px] max-sm:mx-[30%] grid lg:grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-2 justify-center items-center max-[1330px]:space-x-[5%] max-[1257px]:space-x-[50px] max-[1024px]: mx-0">
+                <Image src={photo1} alt="image1" className='lg:mx-[15%] max-sm:mb-5 max-[1024px]:mx-0'/>
+                <Image src={photo2} alt="image2" className='lg:mx-[15%] max-[1024px]:pr-[50px] max-[1024px]:w-[110%]'/>
         </div>
         <div className='lg:hidden flex justify-center md:hidden mt-6'>
             <button className='px-[30px] py-[20px] bg-[#F4D3A1] context-center rounded-md text-[#FF733B] text-2xl'>See More</button>

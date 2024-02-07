@@ -12,14 +12,13 @@ import * as z from 'zod';
 import { revalidatePath } from "next/cache";
 import { auth } from "@clerk/nextjs";
 import { redirect } from 'next/navigation';
+import Footer from '@/components/Footer';
 
 
 
 const schema = z.object({
     name : z.string().min(5)
 })
-
-
 
 export default async function Dashboard(){
     const {userId} =  auth()
@@ -62,6 +61,7 @@ export default async function Dashboard(){
             <Feedback/>
             <Subscribe/>
             </div>
+            <Footer/>
         </div>
     )
 }
